@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="ClearEditText">
+        <attr name="functionType">
+            <enum name="mormal" value="-1" />
+            <enum name="cancel" value="0" />
+            <enum name="watchpwd" value="1" />
+        </attr>
+        <!--关闭查看密码 -->
+        <attr name="closewatchwpd" format="reference" />
+        <!--开启查看密码 -->
+        <attr name="openwatchwpd" format="reference" />
+        <!--左侧Drawable的宽度-->
+        <attr name="leftDrawableWidth" format="dimension" />
+        <!--左侧Drawable的高度-->
+        <attr name="leftDrawableHeight" format="dimension" />
+        <!--右侧Drawable的宽度-->
+        <attr name="rightDrawableWidth" format="dimension" />
+        <!--右侧Drawable的高度-->
+        <attr name="rightDrawableHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

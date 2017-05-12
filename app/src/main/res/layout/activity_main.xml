@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:padding="10dp"/>
+        <com.example.clearedittextdemo.ClearEditText
+            android:id="@+id/clear_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"
+            app:functionType="cancel" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码"
+            android:padding="10dp"/>
+        <com.example.clearedittextdemo.ClearEditText
+            android:id="@+id/watch_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"
+            android:inputType="textPassword"
+            app:functionType="watchpwd" />
+    </LinearLayout>
+
+</LinearLayout>
